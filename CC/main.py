@@ -25,7 +25,7 @@ def predict(x):
 
 app = Flask(__name__)
 
-@app.route("/", methods=["POST"])
+@app.route("/predict", methods=["POST"])
 def index():
     if 'file' not in request.files:
         return jsonify({"error": "no file"})
