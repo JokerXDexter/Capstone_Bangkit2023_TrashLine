@@ -10,7 +10,7 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 model = load_model("model.h5")
 
 # load the image
-path = "test2.jpg"
+path = "test4.jpg"
 
 img = load_img(path, target_size=(224, 224))
 img = img_to_array(img)
